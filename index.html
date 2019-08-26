@@ -344,6 +344,7 @@
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 
@@ -372,6 +373,21 @@
       preventClicksPropagation: false,
       slidesPerView: 4,
       loop: true,
+      breakpoints: 
+				{
+					1170: 
+					{
+						slidesPerView: 3,
+					},
+          1022: 
+					{
+						slidesPerView: 2,
+					},
+          600: 
+					{
+						slidesPerView: 1,
+					},
+        },
     });
   </script>
 </body>
