@@ -157,7 +157,7 @@
             </svg>
           </div>
           <div class="icons__title">
-            <p>Натуральные, качественные материалы</p>
+            <p>Натуральные,<br>качественные материалы</p>
             <span>совместили с эргономичностью, практичностью и функциональностью изделий</span>
           </div>
         </li>
@@ -168,7 +168,7 @@
             </svg>
           </div>
           <div class="icons__title">
-            <p>Инновационный, стильный и универсальный дизайн</p>
+            <p>Инновационный, стильный<br>и универсальный дизайн</p>
             <span>сочетающий в себе оригинальность и современные тренды</span>
           </div>
         </li>
@@ -180,7 +180,7 @@
           </div>
           <div class="icons__title">
             <p>Высокотехнологичное производство</p>
-            <span>на фабрике полного цикла и контроль качества исключает брак</span>
+            <span>на фабрике полного цикла<br>и контроль качества<br>исключает брак</span>
           </div>
         </li>
         <li class="icons__item">
@@ -191,7 +191,7 @@
           </div>
           <div class="icons__title">
             <p>Комфортные условия сотрудничества</p>
-            <span>и индивидуальный подход при работе с партнерами</span>
+            <span>и индивидуальный подход<br>при работе с партнерами</span>
           </div>
         </li>
       </ul>
@@ -204,43 +204,51 @@
       <div class="swiper-container product__slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide product__slide">
-            <img src="img/images/collection-1.jpg" alt="Наши коллекции">
-            <p class="product__collection">Edem</p>
-            <div class="product__overlay">
-              <p>Мебель с мягкими, скругленными углами изделий, геометрия которых подчеркнута элегантными контрастными линиями.</p>
-              <span>Подробнее</span>
-            </div>
+            <a href="#" class="product__link">
+              <img src="img/images/collection-1.jpg" alt="Наши коллекции">
+              <p class="product__collection">Edem</p>
+              <div class="product__overlay">
+                <p>Мебель с мягкими, скругленными углами изделий, геометрия которых подчеркнута элегантными контрастными линиями.</p>
+                <span>Подробнее &rsaquo;</span>
+              </div>
+            </a>
           </div>
           <div class="swiper-slide product__slide">
-            <img src="img/images/collection-2.jpg" alt="Наши коллекции">
-            <p class="product__collection">Torn</p>
-            <div class="product__overlay">
-              <p>Мебель с мягкими, скругленными углами изделий, геометрия которых подчеркнута элегантными контрастными линиями.</p>
-              <span>Подробнее</span>
-            </div>
+            <a href="#" class="product__link">
+              <img src="img/images/collection-2.jpg" alt="Наши коллекции">
+              <p class="product__collection">Torn</p>
+              <div class="product__overlay">
+                <p>Мебель с мягкими, скругленными углами изделий, геометрия которых подчеркнута элегантными контрастными линиями.</p>
+                <span>Подробнее &rsaquo;</span>
+              </div>
+            </a>
           </div>
           <div class="swiper-slide product__slide">
-            <img src="img/images/collection-3.jpg" alt="Наши коллекции">
-            <p class="product__collection">Solaris</p>
-            <div class="product__overlay">
-              <p>Мебель с мягкими, скругленными углами изделий, геометрия которых подчеркнута элегантными контрастными линиями.</p>
-              <span>Подробнее</span>
-            </div>
+            <a href="#" class="product__link">
+              <img src="img/images/collection-3.jpg" alt="Наши коллекции">
+              <p class="product__collection">Solaris</p>
+              <div class="product__overlay">
+                <p>Мебель с мягкими, скругленными углами изделий, геометрия которых подчеркнута элегантными контрастными линиями.</p>
+                <span>Подробнее &rsaquo;</span>
+              </div>
+            </a>
           </div>
           <div class="swiper-slide product__slide">
-            <img src="img/images/collection-4.jpg" alt="Наши коллекции">
-            <p class="product__collection">Elysium</p>
-            <div class="product__overlay">
-              <p>Мебель с мягкими, скругленными углами изделий, геометрия которых подчеркнута элегантными контрастными линиями.</p>
-              <span>Подробнее</span>
-            </div>
+            <a href="#" class="product__link">
+              <img src="img/images/collection-4.jpg" alt="Наши коллекции">
+              <p class="product__collection">Elysium</p>
+              <div class="product__overlay">
+                <p>Мебель с мягкими, скругленными углами изделий, геометрия которых подчеркнута элегантными контрастными линиями.</p>
+                <span>Подробнее &rsaquo;</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
       <div class="product__btns">
         <div class="swiper-button-prev product__prev"></div>
-        <div class="swiper-button-next product__next"></div>
         <a href="#" class="btn product__btn">Смотреть все</a>
+        <div class="swiper-button-next product__next"></div>
       </div>
     </section>
     
@@ -361,7 +369,8 @@
       simulateTouch: false,
       preventClicks: false,
       preventClicksPropagation: false,
-      slidesPerView: 'auto',
+      slidesPerView: 4,
+      loop: true,
     });
   </script>
 </body>
