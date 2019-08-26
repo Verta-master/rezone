@@ -1,6 +1,6 @@
 .block {
   position: relative;
-  margin-top: 120px;
+  margin-top: 130px;
   margin-bottom: 160px;
   padding-bottom: 40px;
   overflow: hidden;
@@ -22,16 +22,16 @@
       left: 0;
     }
     .block__btn {
-      margin-left: auto;
+      right: 0;
+      left: auto;
     }
     .title {
       text-align: right;
       
       p {
         &::after {
-          left: auto;
-          right: 100%;
-          transform: translateX(-50%);
+          left: 0;
+          transform: translateX(-110%);
         }
       }
     }
@@ -40,14 +40,19 @@
 
 .block__info {
   width: 50%;
+  min-height: 380px;
   position: relative;
   padding-right: 40px;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
   background-color: @bezh;
   
   b {
     color: @red;
+  }
+  
+  p {
+    margin-top: 0;
   }
   
   &::before {
@@ -64,17 +69,18 @@
 }
 
 .block__btn {
-  position: relative;
-  bottom: -75px;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
 }
 
 .block__img {
-  width: 47vw;
-//  height: 460px;
+  width: 48vw;
+  min-height: 460px;
   position: absolute;
   top: 20px;
   bottom: -40px;
-  left: 53%;
+  left: 52%;
   overflow: hidden;
   display: flex;
   justify-content: center;
