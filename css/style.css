@@ -883,6 +883,7 @@ button {
   height: 100%;
   width: auto;
   max-width: none;
+  min-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50%;
@@ -951,6 +952,7 @@ button {
   transition: ease-out 0.3s;
 }
 .product__overlay p {
+  max-width: 100%;
   margin-top: 0;
   color: #f2efed;
   font-size: 20px;
@@ -1386,9 +1388,8 @@ button {
   .footer .contacts__call {
     margin-right: auto;
   }
-  .product__slide img {
-    width: 100%;
-    height: auto;
+  .footer__block {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 600px) {
@@ -1402,9 +1403,6 @@ button {
     padding-right: 15px;
     padding-top: 30px;
   }
-  .promo__control {
-    margin-left: 0;
-  }
   .promo__title {
     margin-top: 0;
     font-size: 60px;
@@ -1416,8 +1414,9 @@ button {
     margin-top: 30px;
   }
   .promo__control {
+    margin-left: 0;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -1436,9 +1435,6 @@ button {
     margin-top: 60px;
     margin-bottom: 60px;
   }
-  .footer__block {
-    margin-bottom: 50px;
-  }
   .footer__social {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1450,5 +1446,11 @@ button {
   .search__btn,
   .search__input {
     height: 40px;
+  }
+  .header .contacts__call {
+    width: 150px;
+    height: 40px;
+    font-size: 10px;
+    letter-spacing: 0.07em;
   }
 }
