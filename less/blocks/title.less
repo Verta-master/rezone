@@ -38,3 +38,30 @@
     }
   }
 }
+
+h1,
+.title-main {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: @bordo;
+  text-transform: uppercase;
+  
+  span {
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: @red;
+    }
+  }
+}

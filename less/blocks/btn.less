@@ -7,6 +7,7 @@
   color: @bezh;
   text-transform: uppercase;
   font-size: 18px;
+  line-height: 1;
   font-weight: 700;
   letter-spacing: 0.05em;
   background-color: @blue;
@@ -16,6 +17,32 @@
   &:hover,
   &:active {
     background-color: @red;
+    .transition();
+  }
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  color: @blue;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+  border: 1px solid @blue;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @bezh;
+    background-color: @blue;
     .transition();
   }
 }

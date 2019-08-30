@@ -1,0 +1,29 @@
+.breadcrumbs {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.breadcrumbs__link {
+  color: #003e50;
+  letter-spacing: 0.05em;
+}
+
+a.breadcrumbs__link {
+  margin-right: 10px;
+  .transition();
+  
+  &::after {
+    content: "\2014";
+    margin-left: 10px;
+  }
+  
+  &:hover,
+  &:active {
+    color: @red;
+    .transition();
+    
+    &::after {
+      color: #003e50;
+    }
+  }
+}
