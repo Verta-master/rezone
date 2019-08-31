@@ -598,6 +598,8 @@ button {
   letter-spacing: 0.05em;
   border-radius: 2px;
   border: 1px solid #003e50;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
@@ -677,7 +679,7 @@ button {
   color: #003e50;
   font-size: 100px;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
 }
 .promo__title span {
@@ -823,6 +825,7 @@ h2 a:active,
 }
 h1,
 .title-main {
+  position: relative;
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
@@ -834,15 +837,11 @@ h1,
   color: #420917;
   text-transform: uppercase;
 }
-h1 span,
-.title-main span {
-  position: relative;
-}
-h1 span::before,
-.title-main span::before {
+h1::before,
+.title-main::before {
   content: "";
   position: absolute;
-  bottom: -3px;
+  bottom: -5px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -855,10 +854,9 @@ h1--left,
   margin-bottom: 40px;
   text-align: left;
 }
-h1--left span::before,
-.title-main--left span::before {
-  bottom: 10px;
-  left: 110%;
+h1--left::before,
+.title-main--left::before {
+  left: 0;
   -webkit-transform: none;
           transform: none;
 }
@@ -1414,17 +1412,17 @@ a.breadcrumbs__link:active::after {
 .citation p {
   margin: 0;
 }
-.list {
+.list ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.list li {
+.list ul li {
   position: relative;
   margin-bottom: 15px;
   padding-left: 30px;
 }
-.list li::before {
+.list ul li::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -1535,7 +1533,6 @@ a.breadcrumbs__link:active::after {
 .form__btn {
   width: 100%;
   height: 50px;
-  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1567,7 +1564,10 @@ a.breadcrumbs__link:active::after {
 .form__label {
   position: relative;
   display: block;
-  padding-left: 60px;
+  padding-left: 50px;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
   color: #f2efed;
   font-size: 14px;
   line-height: 1.2;
@@ -1621,6 +1621,76 @@ a.breadcrumbs__link:active::after {
   margin-right: auto;
   padding: 100px;
   background-color: rgba(6, 44, 56, 0.7);
+}
+.info {
+  margin-bottom: 100px;
+}
+.info ul,
+.info p {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info b {
+  color: #ae503e;
+}
+.map {
+  margin-bottom: 100px;
+}
+.map__img {
+  min-height: 650px;
+  background-image: url(../img/images/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.map__img iframe {
+  display: block;
+  width: 100%;
+  height: 650px;
+  border: 0;
+}
+.map__wrap {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+}
+.map__column {
+  width: 44%;
+}
+.map__address {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 60px;
+  background-image: url(../img/icons/place-localizer.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 30px 30px;
+}
+.map__phone {
+  margin: 0;
+}
+.map__phone a {
+  font-weight: 700;
+}
+.map__phone a:hover,
+.map__phone a:active {
+  color: #ae503e;
+}
+.map__mail {
+  margin: 0;
+}
+.map__mail a {
+  border-bottom: 1px solid #062c38;
+}
+.map__mail a:hover,
+.map__mail a:active {
+  border-color: rgba(255, 255, 255, 0);
 }
 @media (max-width: 1400px) {
   .logo svg {
@@ -1774,6 +1844,9 @@ a.breadcrumbs__link:active::after {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  .map__column {
+    width: 49%;
+  }
 }
 @media (max-width: 1022px) {
   .block__info {
@@ -1856,6 +1929,12 @@ a.breadcrumbs__link:active::after {
   .about__img,
   .about__info {
     width: 100%;
+  }
+  .map__column {
+    width: 100%;
+  }
+  .map__wrap {
+    display: block;
   }
 }
 @media (max-width: 766px) {
