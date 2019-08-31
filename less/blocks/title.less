@@ -94,10 +94,22 @@ h1,
       content: "";
       position: absolute;
       bottom: -3px;
-      left: 0;
-      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
       height: 2px;
       background-color: @red;
+    }
+  }
+  
+  &--left {
+    margin-bottom: 40px;
+    text-align: left;
+    
+    span::before {
+      bottom: 10px;
+      left: 110%;
+      transform: none;
     }
   }
 }

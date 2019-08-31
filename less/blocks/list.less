@@ -1,0 +1,21 @@
+.list {
+  .reset();
+  list-style: none;
+  
+  li {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 5px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: rgb(174, 80, 62);
+    }
+  }
+}
