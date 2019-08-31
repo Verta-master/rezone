@@ -1634,6 +1634,50 @@ a.breadcrumbs__link:active::after {
 .info b {
   color: #ae503e;
 }
+.info__docs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 80px;
+}
+.info__file {
+  display: block;
+  width: 160px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  padding-top: 120px;
+  padding-left: 10px;
+  color: #ae503e;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100px 100px;
+}
+.info__file--xls {
+  background-image: url(../img/icons/xls.svg);
+}
+.info__file--pdf {
+  background-image: url(../img/icons/pdf.svg);
+}
+.info__file--doc {
+  background-image: url(../img/icons/doc.svg);
+}
+.info__file:hover,
+.info__file:active {
+  text-decoration: underline;
+}
 .map {
   margin-bottom: 100px;
 }
