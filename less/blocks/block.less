@@ -1,59 +1,59 @@
 .block {
   position: relative;
-  margin-top: 130px;
-  margin-bottom: 160px;
+//  margin-top: 130px;
+  margin-bottom: 140px;
+  padding-top: 40px;
   padding-bottom: 40px;
   overflow: hidden;
   
-  &--left {
+  &--right {
     .block__info {
       margin-left: auto;
       text-align: right;
       padding-right: 0;
       padding-left: 40px;
-      
-      &::before {
-        right: 0;
-        left: auto;
-        transform: translateX(50vw);
-      }
     }
     .block__img {
-      left: 0;
+      left: auto;
+      right: 50%;
     }
     .block__btn {
-      right: 0;
+      right: 15px;
       left: auto;
     }
     .title {
       text-align: right;
-      
-      p {
-        &::after {
-          left: 0;
-          transform: translateX(-110%);
-        }
-      }
+      margin-left: auto;
+    }
+    .title-2::after,
+    h2::after {
+      left: auto;
+      right: 110%;
+    }
+  }
+  
+  &--left {
+    .block__info {
+      margin-left: auto;
+      padding-right: 0;
+      padding-left: 40px;
+    }
+    .block__img {
+      left: auto;
+      right: 50%;
+    }
+    .block__btn {
+      left: ~"calc(50% + 40px)";
+    }
+    .title {
+      margin-left: auto;
     }
   }
 }
 
-.block__info {
-  width: 50%;
-  min-height: 380px;
+.block__wrap {
   position: relative;
-  padding-right: 40px;
-  padding-top: 50px;
-  padding-bottom: 35px;
-  background-color: @bezh;
-  
-  b {
-    color: @red;
-  }
-  
-  p {
-    margin-top: 0;
-  }
+  min-height: 380px;
   
   &::before {
     content: "";
@@ -62,25 +62,41 @@
     top: 0;
     bottom: 0;
     width: 100vw;
-    left: 0;
-    transform: translateX(-50vw);
+    left: 50%;
+    transform: translateX(-50%);
     background-color: @bezh;
+  }
+}
+
+.block__info {
+  width: 50%;
+  padding-right: 40px;
+  padding-top: 50px;
+  padding-bottom: 35px;
+//  background-color: @bezh;
+  
+  b {
+    color: @red;
+  }
+  
+  p {
+    margin-top: 0;
   }
 }
 
 .block__btn {
   position: absolute;
   bottom: -25px;
-  left: 0;
+  left: 15px;
 }
 
 .block__img {
-  width: 48vw;
+  width: 50vw;
   min-height: 460px;
   position: absolute;
-  top: 20px;
+  top: -40px;
   bottom: -40px;
-  left: 52%;
+  left: 50%;
   overflow: hidden;
   display: flex;
   justify-content: center;

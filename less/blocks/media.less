@@ -139,15 +139,6 @@
   .promo__control {
     margin-left: -50px;
   }
-  .block__img {
-    width: 50vw;
-    left: 50%;
-  }
-  .product,
-  .block {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
   .icons__list {
     flex-wrap: wrap;
     width: 700px;
@@ -157,6 +148,17 @@
   }
   .icons__item {
     margin-bottom: 30px;
+  }
+  .banner {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .citation {
+    width: ~"calc(100% - 30px)";
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -174,20 +176,29 @@
       transform: none;
     }
   }
+  .block--left .block__img,
+  .block--right .block__img,
   .block__img {
-    position: static;
-    width: 100%;
+    position: relative;
+    left: -15px;
+    right: -15px;
+    top: auto;
+    bottom: auto;
+    width: 100vw;
     min-height: auto;
   }
   .block__btn {
     position: static;
     margin-top: 35px;
   }
-  .block--left {
+  .block--right {
     .title {
       text-align: left;
-      
-      p::after {
+      margin-left: 0;
+    }
+    .title-2,
+    h2 {
+      &::after {
         left: 110%;
         transform: none;
       }
@@ -204,6 +215,14 @@
       }
     }
   }
+  .block {
+    margin-bottom: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .block--left .block__info {
+    padding-left: 0;
+  }
   .footer__wrap {
     flex-wrap: wrap;
   }
@@ -213,17 +232,18 @@
   .footer .contacts__call {
     margin-right: auto;
   }
-//  .product__slide img {
-//    width: 100%;
-//    height: auto;
-//  }
   .footer__block {
     margin-bottom: 50px;
+  }
+  .citation {
+    padding-right: 40px;
+    padding-left: 100px;
+    background-position: top 50px left 20px;
   }
 }
 
 //-------------------------------------------------------
-@media (max-width: 600px) {
+@media (max-width: 766px) {
   .promo__info {
     padding-left: 0;
     left: 0;
@@ -262,7 +282,6 @@
   }
   .block,
   .product {
-    margin-top: 60px;
     margin-bottom: 60px;
   }
   .footer__social {
@@ -281,5 +300,32 @@
     height: 40px;
     font-size: 10px;
     letter-spacing: 0.07em;
+  }
+  .title {
+    max-width: 100%;
+  }
+}
+
+//-------------------------------------------------------
+@media (max-width: 480px) {
+  .swiper-pagination-bullet {
+    margin: 0 5px!important;
+  }
+  .title-main,
+  h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .citation {
+    margin-bottom: 60px;
+    padding: 20px;
+    padding-top: 60px;
+    font-size: 20px;
+    text-align: center;
+    background-position: top 20px center;
+    background-size: 30px 30px;
+  }
+  .more {
+    margin-bottom: 100px;
   }
 }

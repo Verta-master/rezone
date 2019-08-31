@@ -1,32 +1,13 @@
 .title {
+  max-width: 48%;
   margin-bottom: 30px;
   
-  p {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-    color: @bordo;
-    font-size: 24px;
-    line-height: 1.2;
-    font-weight: 700;
-    text-transform: uppercase;
-    
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 3px;
-      left: 110%;
-      width: 100px;
-      height: 2px;
-      background-color: @red;
-    }
-  }
-  
   &--center {
+    max-width: 100%;
     margin-bottom: 85px;
     
-    p {
+    h2,
+    .title-2 {
       display: block;
       text-align: center;
       
@@ -39,6 +20,60 @@
   }
 }
 
+h2,
+.title-2 {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  color: @bordo;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 110%;
+    width: 100px;
+    height: 2px;
+    background-color: @red;
+  }
+  
+  a {
+    .transition();
+    
+    &:hover,
+    &:active {
+      color: @red;
+      .transition();
+    }
+  }
+}
+
+.title-3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: @bordo;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  
+  a {
+    .transition();
+    
+    &:hover,
+    &:active {
+      color: @red;
+      .transition();
+    }
+  }
+}
+
 h1,
 .title-main {
   max-width: 1140px;
@@ -47,6 +82,7 @@ h1,
   margin-bottom: 60px;
   font-size: 40px;
   font-weight: 700;
+  line-height: 1.2;
   text-align: center;
   color: @bordo;
   text-transform: uppercase;
@@ -64,4 +100,13 @@ h1,
       background-color: @red;
     }
   }
+}
+
+time {
+  display: block;
+  margin-bottom: 30px;
+  color: #626e79;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
 }
