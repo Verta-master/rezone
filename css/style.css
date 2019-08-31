@@ -1168,7 +1168,7 @@ time {
   width: 30px;
   height: 30px;
   padding-top: 2px;
-  padding-left: 2px;
+  padding-left: 3px;
   border-radius: 5px;
   border: 2px solid #f2efed;
 }
@@ -1667,8 +1667,8 @@ a.breadcrumbs__link:active::after {
   main {
     margin-top: 65px;
   }
-  .block,
-  .product {
+  .promo,
+  .block {
     margin-bottom: 60px;
   }
   .footer__social {
@@ -1713,5 +1713,11 @@ a.breadcrumbs__link:active::after {
   }
   .more {
     margin-bottom: 100px;
+  }
+  .icons {
+    margin-bottom: 60px;
+  }
+  .breadcrumbs__link {
+    font-size: 16px;
   }
 }
