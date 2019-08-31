@@ -1,0 +1,66 @@
+.map {
+  margin-bottom: 100px;
+}
+
+.map__img {
+  min-height: 650px;
+  background-image: url(../img/images/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  iframe {
+    display: block;
+    width: 100%;
+    height: 650px;
+    border: 0;
+  }
+}
+
+.map__wrap {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+}
+
+.map__column {
+  width: 44%;
+}
+
+.map__address {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 60px;
+  background-image: url(../img/icons/place-localizer.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 30px 30px;
+}
+
+.map__phone {
+  margin: 0;
+  
+  a {
+    font-weight: 700;
+    
+    &:hover,
+    &:active {
+      color: @red;
+    }
+  }
+}
+
+.map__mail {
+  margin: 0;
+  
+  a {
+    border-bottom: 1px solid @dark;
+    
+    &:hover,
+    &:active {
+      border-color: rgba(255,255,255,0);
+    }
+  }
+}

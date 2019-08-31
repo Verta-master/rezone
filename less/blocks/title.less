@@ -76,6 +76,7 @@ h2,
 
 h1,
 .title-main {
+  position: relative;
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
@@ -86,29 +87,24 @@ h1,
   text-align: center;
   color: @bordo;
   text-transform: uppercase;
-  
-  span {
-    position: relative;
     
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -3px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100px;
-      height: 2px;
-      background-color: @red;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background-color: @red;
   }
   
   &--left {
     margin-bottom: 40px;
     text-align: left;
     
-    span::before {
-      bottom: 10px;
-      left: 110%;
+    &::before {
+      left: 0;
       transform: none;
     }
   }
