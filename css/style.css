@@ -467,6 +467,11 @@ button {
   color: #F95454;
   cursor: pointer;
 }
+.form.login .errors {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+}
 .wrapper {
   width: 1170px;
   margin-left: auto;
@@ -1623,6 +1628,9 @@ a.breadcrumbs__link:active::after {
 .info {
   margin-bottom: 100px;
 }
+.info--mb {
+  margin-bottom: 50px;
+}
 .info ul,
 .info p {
   max-width: 800px;
@@ -1663,12 +1671,14 @@ a.breadcrumbs__link:active::after {
   background-position: top center;
   background-size: 100px 100px;
 }
+.info__file--xlsx,
 .info__file--xls {
   background-image: url(../img/icons/xls.svg);
 }
 .info__file--pdf {
   background-image: url(../img/icons/pdf.svg);
 }
+.info__file--docx,
 .info__file--doc {
   background-image: url(../img/icons/doc.svg);
 }
@@ -1981,6 +1991,163 @@ a.breadcrumbs__link:active::after {
 }
 .filter__checkbox:checked + .filter__label::after {
   display: block;
+}
+.collection {
+  margin-bottom: 140px;
+}
+.collection__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+.collection__item {
+  width: 48%;
+  margin-bottom: 30px;
+}
+.collection__link {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  line-height: 1.2;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.collection__link:hover,
+.collection__link:active {
+  color: #420917;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.collection__link:hover .collection__img img,
+.collection__link:active .collection__img img {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.collection__img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.collection__img img {
+  display: block;
+  height: 100%;
+  max-width: none;
+  min-width: 100%;
+  -o-object-position: 50%;
+     object-position: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.collection__title {
+  position: absolute;
+  z-index: 5;
+  bottom: -13px;
+  left: -7px;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 80px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #f2efed;
+  text-transform: uppercase;
+}
+.collection__title::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 5px;
+  left: 2px;
+  top: 15px;
+  right: 10px;
+  background-color: #ae503e;
+}
+.collection__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.collection__icon {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 680px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.collection__info {
+  width: 360px;
+  line-height: 1.2;
+}
+.collection__pic {
+  padding-top: 140px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  color: #ae503e;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.collection__pic--bed1 {
+  background-image: url(../img/icons/icon-bed.svg);
+  background-size: 116px 116px;
+}
+.collection__pic--bed2 {
+  background-image: url(../img/icons/icon-tumba.svg);
+  background-size: 100px 100px;
+}
+.collection__pic--bed3 {
+  background-image: url(../img/icons/icon-shkap.svg);
+  background-size: 107px 107px;
+}
+.collection__pic--bed4 {
+  background-image: url(../img/icons/icon-trumo.svg);
+  background-size: 100px 100px;
+}
+.collection__feature {
+  margin: 0;
+  max-width: 130px;
 }
 @media (max-width: 1400px) {
   .logo svg {
