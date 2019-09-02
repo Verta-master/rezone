@@ -2107,7 +2107,7 @@ a.breadcrumbs__link:active::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 680px;
+  width: calc(100% - 420px);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2120,6 +2120,9 @@ a.breadcrumbs__link:active::after {
   line-height: 1.2;
 }
 .collection__pic {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding-top: 140px;
   font-size: 20px;
   font-weight: 700;
@@ -2145,9 +2148,25 @@ a.breadcrumbs__link:active::after {
   background-image: url(../img/icons/icon-trumo.svg);
   background-size: 100px 100px;
 }
+.collection__pic--liv1 {
+  background-image: url(../img/icons/icon-living1.svg);
+  background-size: 100px 100px;
+}
+.collection__pic--liv2 {
+  background-image: url(../img/icons/icon-living2.svg);
+  background-size: 107px 107px;
+}
+.collection__pic--liv3 {
+  background-image: url(../img/icons/icon-living3.svg);
+  background-size: 127px 127px;
+}
+.collection__pic--liv4 {
+  background-image: url(../img/icons/icon-living4.svg);
+  background-size: 107px 107px;
+}
 .collection__feature {
-  margin: 0;
-  max-width: 130px;
+  margin: 0 auto;
+  max-width: 160px;
 }
 @media (max-width: 1400px) {
   .logo svg {
@@ -2414,6 +2433,37 @@ a.breadcrumbs__link:active::after {
     margin-left: auto;
     margin-right: auto;
   }
+  .collection__img {
+    height: 300px;
+  }
+  .collection__link {
+    font-size: 18px;
+  }
+  .collection__title {
+    font-size: 60px;
+  }
+  .collection__title:before {
+    bottom: 0;
+    top: 12px;
+    right: 7px;
+  }
+  .collection__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .collection__icon {
+    width: 100%;
+  }
+  .collection__info {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 766px) {
   .promo__info {
@@ -2485,6 +2535,33 @@ a.breadcrumbs__link:active::after {
   .form__label::after,
   .form__label::before {
     top: 5px;
+  }
+}
+@media (max-width: 600px) {
+  .collection__item {
+    width: 100%;
+  }
+  .collection__icon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .collection__pic {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    margin-bottom: 30px;
+  }
+  .collection__list {
+    margin-bottom: 40px;
+  }
+  .collection {
+    margin-bottom: 60px;
   }
 }
 @media (max-width: 480px) {
