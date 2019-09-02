@@ -79,12 +79,14 @@
   p {
     max-width: 100%;
     margin-top: 0;
+    margin-bottom: 10px;
     color: @bezh;
     font-size: 20px;
   }
   
   span {
     display: block;
+    margin-top: 20px;
     font-size: 14px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -109,4 +111,21 @@
 .product__next {
   position: static;
   margin-top: 0;
+}
+
+.product__name {
+  margin: 0;
+  padding: 5px;
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: @red;
+  color: @bezh;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  border-left: 1px solid @dark;
+  border-right: 1px solid @dark;
 }
