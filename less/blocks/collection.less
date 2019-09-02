@@ -1,0 +1,137 @@
+.collection {
+  margin-bottom: 140px;
+}
+
+.collection__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+.collection__item {
+  width: 48%;
+  margin-bottom: 30px;
+}
+
+.collection__link {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  line-height: 1.2;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @bordo;
+    .transition();
+
+    .collection__img img {
+      transform: scale(1.02);
+      .transition();
+    }
+  }
+}
+
+.collection__img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    display: block;
+    height: 100%;
+    max-width: none;
+    min-width: 100%;
+    object-position: 50%;
+    object-fit: cover;
+    flex: 0 0 auto;
+    .transition();
+  }
+}
+
+.collection__title {
+  position: absolute;
+  z-index: 5;
+  bottom: -13px;
+  left: -7px;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 80px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: @bezh;
+  text-transform: uppercase;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 5px;
+    left: 2px;
+    top: 15px;
+    right: 10px;
+    background-color: @red;
+  }
+}
+
+.collection__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collection__icon {
+  .reset();
+  list-style: none;
+  display: flex;
+  width: 680px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.collection__info {
+  width: 360px;
+  line-height: 1.2;
+}
+
+.collection__pic {
+  padding-top: 140px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  color: @red;
+  background-repeat: no-repeat;
+  background-position: top center;
+  
+  &--bed1 {
+    background-image: url(../img/icons/icon-bed.svg);
+    background-size: 116px 116px;
+  }
+  &--bed2 {
+    background-image: url(../img/icons/icon-tumba.svg);
+    background-size: 100px 100px;
+  }
+  &--bed3 {
+    background-image: url(../img/icons/icon-shkap.svg);
+    background-size: 107px 107px;
+  }
+  &--bed4 {
+    background-image: url(../img/icons/icon-trumo.svg);
+    background-size: 100px 100px;
+  }
+}
+
+.collection__feature {
+  margin: 0;
+  max-width: 130px;
+}
