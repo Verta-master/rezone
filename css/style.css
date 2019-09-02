@@ -2233,7 +2233,7 @@ a.breadcrumbs__link:active::after {
 .card__info {
   width: 360px;
 }
-.card__block {
+.card-block {
   margin-bottom: 30px;
 }
 .card__title {
