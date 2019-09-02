@@ -263,6 +263,7 @@
   .map__column {
     width: 100%;
   }
+  .card__top,
   .map__wrap {
     display: block;
   }
@@ -305,6 +306,15 @@
     width: 100%;
     max-width: 500px;
     margin-bottom: 50px;
+  }
+  .card__pic {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .card__aside {
+    margin-top: 0;
+    width: 100%;
   }
 }
 
@@ -378,6 +388,7 @@
   .form__label::before {
     top: 5px;
   }
+  .card__block,
   .card__wrap {
     display: block;
   }
@@ -385,8 +396,27 @@
     width: 100%;
     margin-bottom: 20px;
   }
+  .card__content,
   .card__info {
     width: 100%;
+  }
+  .nav {
+    margin-bottom: 20px;
+  }
+  .nav__btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 260px;
+    height: 50px;
+    padding-left: 30px;
+    color: @bezh;
+    font-size: 20px;
+    line-height: 1;
+    background-color: @red;
+  }
+  .nav__list {
+    display: none;
   }
 }
 
@@ -442,5 +472,8 @@
   }
   .order__block {
     padding: 30px 20px;
+  }
+  .card__text {
+    padding: 10px 20px;
   }
 }

@@ -75,3 +75,51 @@
 .card__next {
   right: -35px;
 }
+
+.card__text {
+  margin-bottom: 70px;
+  padding: 20px 35px;
+  background-color: @bezh;
+  border-radius: 2px;
+}
+
+.card__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.card__content {
+  width: ~"calc(100% - 290px)";
+}
+
+.card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card__aside {
+  width: 260px;
+  margin-top: -3px;
+  
+  p {
+    margin-top: 0;
+    line-height: 1.2;
+  }
+}
+
+.card__pic {
+  width: ~"calc(100% - 290px)";
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+  }
+}
