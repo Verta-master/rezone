@@ -273,6 +273,33 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .collection__img {
+    height: 300px;
+  }
+  .collection__link {
+    font-size: 18px;
+  }
+  .collection__title {
+    font-size: 60px;
+    
+    &:before {
+      bottom: 0;
+      top: 12px;
+      right: 7px;
+    }
+  }
+  .collection__wrap {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .collection__icon {
+    width: 100%;
+  }
+  .collection__info {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 50px;
+  }
 }
 
 //-------------------------------------------------------
@@ -344,6 +371,28 @@
   .form__label::after,
   .form__label::before {
     top: 5px;
+  }
+}
+
+//-------------------------------------------------------
+@media (max-width: 600px) {
+  .collection__item {
+    width: 100%;
+  }
+  .collection__icon {
+    flex-direction: column;
+    align-items: center;
+  }
+  .collection__pic {
+    width: 100%;
+    flex-grow: 0;
+    margin-bottom: 30px;
+  }
+  .collection__list {
+    margin-bottom: 40px;
+  }
+  .collection {
+    margin-bottom: 60px;
   }
 }
 

@@ -93,7 +93,7 @@
   .reset();
   list-style: none;
   display: flex;
-  width: 680px;
+  width: ~"calc(100% - 420px)";
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -104,6 +104,7 @@
 }
 
 .collection__pic {
+  flex-grow: 1;
   padding-top: 140px;
   font-size: 20px;
   font-weight: 700;
@@ -129,9 +130,25 @@
     background-image: url(../img/icons/icon-trumo.svg);
     background-size: 100px 100px;
   }
+  &--liv1 {
+    background-image: url(../img/icons/icon-living1.svg);
+    background-size: 100px 100px;
+  }
+  &--liv2 {
+    background-image: url(../img/icons/icon-living2.svg);
+    background-size: 107px 107px;
+  }
+  &--liv3 {
+    background-image: url(../img/icons/icon-living3.svg);
+    background-size: 127px 127px;
+  }
+  &--liv4 {
+    background-image: url(../img/icons/icon-living4.svg);
+    background-size: 107px 107px;
+  }
 }
 
 .collection__feature {
-  margin: 0;
-  max-width: 130px;
+  margin: 0 auto;
+  max-width: 160px;
 }
